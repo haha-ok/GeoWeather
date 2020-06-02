@@ -97,10 +97,10 @@ public class Result extends AppCompatActivity {
             try{
                 JSONObject jsonObject = new JSONObject(s);
                 String weather = jsonObject.getString("weather");
-                //tv.setText(weather);
+        
 
                 JSONArray arr = new JSONArray(weather);
-                //JSONArray arr1 = new JSONArray(main1);
+                
 
                 String message ="";
                 String temperature="",MaxTemp="",MinTemp="",city="";
