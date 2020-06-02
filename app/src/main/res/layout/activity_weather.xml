@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".weather">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_marginHorizontal="50dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:textSize="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter the city"
+        android:id="@+id/tv"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20dp"
+        android:background="@drawable/roundedit"
+        android:layout_below="@+id/tv"
+        android:textColor="#ffffff"
+        android:drawableRight="@drawable/searchicon"
+        android:paddingRight="10dp"
+        android:backgroundTint="#000000"
+        android:id="@+id/edit"
+        android:paddingLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/roundbutton"
+        android:onClick="getWeather"
+        android:text="What's the weather?"
+        android:textAllCaps="false"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="Or"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"></TextView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/roundbutton"
+        android:text="Point on map!"
+        android:textAllCaps="false"></Button>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:id="@+id/pb"
+        android:layout_marginTop="200dp"
+        android:alpha="0"
+        android:background="#00020202"
+        android:backgroundTint="#00050505"></ProgressBar>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/button1"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:textColor="#070707"
+        android:textSize="50dp"
+        android:id="@+id/tv3"
+        android:layout_marginTop="20dp"></TextView>
+    <TextView
+        android:layout_width="300dp"
+        android:textColor="#030303"
+        android:paddingLeft="40dp"
+        android:scrollbars = "vertical"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:alpha="0"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv2"
+        android:textSize="30dp"
+        android:background="@drawable/roundtext"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    </RelativeLayout>
+
+</ScrollView>
